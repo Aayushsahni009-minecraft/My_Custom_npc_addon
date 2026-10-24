@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "custom:survival_npc",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:health": { "value": 20, "max": 20 },
+      "minecraft:physics": {},
+      "minecraft:collision_box": { "width": 0.6, "height": 1.9 },
+      "minecraft:nameable": { "always_show": true },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "event": "custom:open_gui"
+            },
+            "swing": true
+          }
+        ]
+      }
+    },
+    "events": {
+      "custom:open_gui": {
+        "queue_command": {
+          "command": [
+            "scriptevent custom:npc_gui"
+          ]
+        }
+      }
+    }
+  }
+}

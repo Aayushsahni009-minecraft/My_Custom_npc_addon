@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "custom:survival_npc",
+      "spawn_egg": {
+        "base_color": "#6f8c55",
+        "overlay_color": "#d6c58a"
+      },
+      "materials": { 
+        "default": "entity_alphatest" 
+      },
+      "textures": { 
+        "default": "textures/entity/custom_npc" 
+      },
+      "geometry": { 
+        "default": "geometry.humanoid.custom" 
+      },
+      "scripts": {
+        "initialize": [
+          "variable.is_holding_right = 0;",
+          "variable.is_holding_left = 0;"
+        ],
+        "animate": [
+          "look_at_target",
+          "move"
+        ]
+      },
+      "animations": {
+        "look_at_target": "animation.humanoid.look_at_target.default",
+        "move": "animation.humanoid.move"
+      },
+      "render_controllers": [ 
+        "controller.render.custom_npc" 
+      ]
+    }
+  }
+}

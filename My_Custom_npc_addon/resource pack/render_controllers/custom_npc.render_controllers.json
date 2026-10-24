@@ -1,0 +1,15 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.custom_npc": {
+      "arrays": {
+        "textures": {
+          "Array.default": [ "texture.default" ]
+        }
+      },
+      "geometry": "geometry.default",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "Array.default[0]" ]
+    }
+  }
+}

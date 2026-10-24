@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "custom:craft_survival_npc"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " I ",
+      "ITI",
+      " B "
+    ],
+    "key": {
+      "I": { "item": "minecraft:iron_ingot" },
+      "T": { "item": "minecraft:totem_of_undying" },
+      "B": { "item": "minecraft:book_and_quill" }
+    },
+    "result": {
+      "item": "minecraft:spawn_egg",
+      "count": 1,
+      "data": 0
+    }
+  }
+}

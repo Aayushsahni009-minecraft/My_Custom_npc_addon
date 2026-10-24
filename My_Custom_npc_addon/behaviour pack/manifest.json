@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Custom NPCs",
+    "description": "Survival and admin NPCs with configurable dialogue and interactions.",
+    "uuid": "da3ef752-94f4-4e92-a63e-63f53835e076",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 16, 0]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "43e8bb59-3df2-47ef-a0d4-d533722b64d1",
+      "version": [1, 0, 0]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "b8a8b122-38d6-44ec-9e23-7a2e873a4923",
+      "version": [1, 0, 0],
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.16.0"
+    }
+  ]
+}
